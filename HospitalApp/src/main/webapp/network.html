@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>نوبت دهی آنلاین</title>
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic&family=Manrope&family=Send+Flowers&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+    </head>
+    <body>
+        <header>
+            <div class="menu-bar">
+                <ul>                     
+                    <li><a href="network.html">شبکه های اجتماعی</a></li>
+                    <li><a href="#footer">تماس با ما</a></li>
+                    <li><a href="home.html">نوبت دهی</a></li>                    
+                    <li><a href="moshaver.html">مشاور پزشکی</a></li>
+                    <li class="active"><a href="home.html">صفحه اصلی</a></li>
+
+                </ul>
+            </div>
+
+        </header>
+
+
+
+
+
+      <section id="banner">
+        <img class="logo" src="hos.pic/logo3.png">
+     
+      </section>
+      
+      <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="#banner"> صفحه اصلی</a></li>
+                <li><a href="#feature">درباره ما </a></li>
+                <li><a href="#service"> بخش های پزشکی</a></li>
+                <li><a href="#testimonial">نظرات شما</a></li>
+                <li><a href="#footer">تماس با ما </a></li>
+
+            </ul>
+        </nav>
+      </div>
+      <div id="menuBtn">
+        <img src="hos.pic/menu.png" id="menu">
+      </div>
+
+      
+      <!--(footer) تماس با ما -->
+      <section id="footer">
+        <div class="title-text">
+            <p> پشتیبانی</p>
+            <h1>تماس با ما </h1>
+        </div>
+
+        <div class="footer-row">
+            <div class="footer-left">
+                <h1>:ایمیل جهت تماس با ما </h1>
+                <p>nobatdehisadaf@gmail.com</p>
+            </div>
+            <div class="footer-right">
+                <h1>:شماره های پشتیبان </h1>
+                <p>+98 911 25 25 658</p>
+                <p>+98 912 10 14 154</p>
+            </div>
+        </div>
+
+      </section>
+
+
+
+
+
+
+      <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var menu = document.getElementById("menu")
+        var sideNav = document.getElementById("sideNav")
+
+        sideNav.style.right = "-200px"
+        menuBtn.onclick = function(){
+            if(sideNav.style.right == "-200px"){
+                sideNav.style.right = "0"
+                 menu.src = "hos.pic/close.png"  
+            }
+            else{
+                sideNav.style.right = "-200px"
+                menu.src = "hos.pic/menu.png" 
+            }
+        }
+        var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 500,
+	speedAsDuration: true
+});
+
+      </script>
+
+
+    </body>
+</html>
+
+
+
